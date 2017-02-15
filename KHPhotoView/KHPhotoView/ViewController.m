@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KHPhotoView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    KHPhotoView *photosView = [[KHPhotoView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
+    
+    [self.view addSubview:photosView];
 }
 
 

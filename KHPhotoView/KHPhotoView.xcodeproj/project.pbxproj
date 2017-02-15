@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8439B3631E53F0AC00A81A0B /* KHPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8439B3621E53F0AC00A81A0B /* KHPhotosViewController.m */; };
 		84E074311E4C4853007A439E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E074301E4C4853007A439E /* main.m */; };
 		84E074341E4C4853007A439E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E074331E4C4853007A439E /* AppDelegate.m */; };
 		84E074371E4C4853007A439E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E074361E4C4853007A439E /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8439B3611E53F0AC00A81A0B /* KHPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHPhotosViewController.h; sourceTree = "<group>"; };
+		8439B3621E53F0AC00A81A0B /* KHPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHPhotosViewController.m; sourceTree = "<group>"; };
 		84E0742C1E4C4853007A439E /* KHPhotoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHPhotoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E074301E4C4853007A439E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84E074321E4C4853007A439E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 		84E074491E4C4987007A439E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8439B3611E53F0AC00A81A0B /* KHPhotosViewController.h */,
+				8439B3621E53F0AC00A81A0B /* KHPhotosViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			files = (
 				84E0745C1E4C4AA5007A439E /* KHPhotoView.m in Sources */,
 				84E074371E4C4853007A439E /* ViewController.m in Sources */,
+				8439B3631E53F0AC00A81A0B /* KHPhotosViewController.m in Sources */,
 				84E074341E4C4853007A439E /* AppDelegate.m in Sources */,
 				84E0745F1E4C4C9D007A439E /* UIView+ViewController.m in Sources */,
 				84E074311E4C4853007A439E /* main.m in Sources */,
@@ -397,6 +403,7 @@
 				84E074451E4C4853007A439E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

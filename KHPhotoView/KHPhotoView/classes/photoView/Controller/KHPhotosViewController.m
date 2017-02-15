@@ -37,9 +37,35 @@ typedef void (^imageBlock)(UIImage*imagee);
     [self createCollectionView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//视图即将显示
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    //显示选中图片
+    [self showSelectImg];
+    
+}
+
+//显示选中图片
+- (void)showSelectImg{
+    
+    NSArray *indexArray = [_selectDataDic allKeys];
+    
+    if (indexArray != nil) {
+        
+        for (NSNumber *num in indexArray) {
+        
+            //解包
+            NSInteger index = [num integerValue];
+            //创建IndexPath
+            NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+            //获取选中图片视图
+            UICollectionViewCell *cell = [_collectionView cellForItemAtIndexPath:indexPath];
+            UIImageView *selectImageView = [cell viewWithTag:102];
+            selectImageView.hidden = NO;
+            
+        }
+    }
 }
 
 //添加两侧导航栏按钮
@@ -58,6 +84,9 @@ typedef void (^imageBlock)(UIImage*imagee);
 }
 //确定
 - (void)rightBtnAct{
+    
+    //回调block
+    _dataBlock(_selectDataDic);
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

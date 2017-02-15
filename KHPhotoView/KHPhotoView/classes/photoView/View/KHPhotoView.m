@@ -7,15 +7,19 @@
 //
 
 #import "KHPhotoView.h"
+#import <Photos/Photos.h>
+#import "UIView+ViewController.h"
+
+#define kItemW 90
+#define kItemH 90
+#define kSpace 10
+
+@interface KHPhotoView ()
+
+@end
 
 @implementation KHPhotoView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 @end

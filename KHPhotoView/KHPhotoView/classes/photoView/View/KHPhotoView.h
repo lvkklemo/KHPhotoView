@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KHPhotoView : UIView
-
+@property(nonatomic,strong)NSMutableArray *dataList;
+@property(nonatomic,strong)NSMutableArray *itemArray;
 @end
